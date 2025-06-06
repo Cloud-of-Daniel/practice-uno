@@ -1,6 +1,6 @@
 
 server:
-  port: 2020
+  port: 5050
 eureka:
   instance:
     hostname: localhost
