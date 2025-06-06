@@ -5,9 +5,9 @@ spring:
     name: dfpm-prestamo-service
 
   datasource:
-    url: jdbc:postgresql://ep-raspy-bonus-a4ejhrpv-pooler.us-east-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_IMsQYRq5NS0a&sslmode=require
+    url: jdbc:postgresql://ep-bold-fire-acpd4v3x-pooler.sa-east-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_qIV6KStL0wBn&sslmode=require
     username: neondb_owner
-    password: npg_IMsQYRq5NS0a
+    password: npg_qIV6KStL0wBn
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
