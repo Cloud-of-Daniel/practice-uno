@@ -1,23 +1,19 @@
 server:
-  port: 2023
+  port: 5053
 spring:
   application:
-    name: dfpm-enverollment-service
+    name: dfpm-prestamo-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/dfpm-enverollment
-    username: postgres
-    password: 123456
+    url: jdbc:postgresql://ep-raspy-bonus-a4ejhrpv-pooler.us-east-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_IMsQYRq5NS0a&sslmode=require
+    username: neondb_owner
+    password: npg_IMsQYRq5NS0a
     driver-class-name: org.postgresql.Driver
   jpa:
-    database: POSTGRESQL
-    show-sql: true
     hibernate:
       ddl-auto: update
+    show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  sql:
-    init:
-      platform: postgres
 
 springdoc:
   api-docs:
@@ -28,6 +24,6 @@ springdoc:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:2020/eureka
+      defaultZone: http://localhost:5050/eureka
   instance:
     hostname: localhost
