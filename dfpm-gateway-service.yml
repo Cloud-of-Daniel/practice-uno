@@ -17,17 +17,17 @@ spring:
         locator:
           enable: true
       routes:
-        - id: dfpm-student-service
-          uri: lb://dfpm-student-service
+        - id: dfpm-usuario-service
+          uri: lb://dfpm-usuario-service
           predicates:
-            - Path=/student/**, /profession/**
+            - Path=/usuario/**, /otrocoontroller/**
 
         - id: dfpm-libro-service
           uri: lb://dfpm-libro-service
           predicates:
             - Path=/libro/**
 
-        - id: dfpm-enverollment-service
-          uri: lb://dfpm-enverollment-service
+        - id: dfpm-prestamo-service
+          uri: lb://dfpm-prestamo-service
           predicates:
-            - Path=/enrollment/**
+            - Path=/prestamo/**
